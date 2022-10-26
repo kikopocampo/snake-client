@@ -18,10 +18,10 @@ const handleUserInput = function(key) {
     connection.write("Say: Hello!");
   }
   if (key === 'j'){
-    connection.write("Say: Hru?");
+    connection.write("Say: Wazzup?");
   }
   if (key === 'k'){
-    connection.write("Say: Bye!");
+    connection.write("Say: See Ya!!");
   }
 };
 
