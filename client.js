@@ -2,7 +2,7 @@ const net = require("net");
 
 const connect = function () {
   const conn = net.createConnection({
-    host: 'localhost',
+    host: '165.227.47.243' ,
     port: 50541,
   });
 
@@ -17,18 +17,7 @@ const connect = function () {
     conn.write("Successfully connected to game server");
     conn.write("Name: KKO");
   });
-  conn.on("connect", () => {
-    setInterval(()=>{
-      conn.write("Move: up");
-    }, 100)
-    // setTimeout(()=>{
-    //   conn.write("Move: left");
-    // }, 1550)
-    // setTimeout(()=>{
-    //   conn.write("Move: up");
-    // }, 1600)
 
-  });
 
   return conn;
 };
